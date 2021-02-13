@@ -31,12 +31,13 @@ def main():
 
 
 def score_control(user_s, computer_s):
+    """Gets user and computer scores as integer and if one of them reach 3, complete the game"""
     if user_s == 3 or computer_s == 3:
         if user_s == 3:
-            print("Kazanan sensin")
+            print("You Win!")
             exit()
         else:
-            print("PC kazandı.")
+            print("Computer Wins!")
             exit()
 
 
