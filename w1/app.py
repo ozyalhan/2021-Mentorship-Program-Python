@@ -34,10 +34,10 @@ def score_control(user_s, computer_s):
     """Gets user and computer scores as integer and if one of them reach 3, complete the game"""
     if user_s == 3 or computer_s == 3:
         if user_s == 3:
-            print("You Win!")
+            print("You Win the Game!")
             exit()
         else:
-            print("Computer Wins!")
+            print("Computer Wins the Game!")
             exit()
 
 
@@ -69,12 +69,13 @@ def compare(user_val, computer_val, user_score, computer_score):
 
 
 def get_computer_choice():
-    computer_choice = random.randint(0, 2)  # 0 1 ya da 2 döner
+    """Return value between 0 to 2 for computer choice of the game"""
+    computer_choice = random.randint(0, 2)
     return computer_choice
 
 
 def get_user_choice():
-    # burayı geliştir
+    """Get user input and return it as integer value"""
     user_choice = int(input("Rock[0], Paper[1], Scisscors[2]: "))
     return user_choice
 
