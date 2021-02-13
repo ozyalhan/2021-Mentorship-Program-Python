@@ -1,17 +1,13 @@
 """
-Readme
+This project aims to introduce my mentees basic of python with all fundamental methods.
 
-This project aims to introduce my mentees basic of python with all fundemantal methods.
-
-Game Concept is Rock Paper Scissors and everone plays this game even one time in life.
+Game Concept is Rock Paper Scissors and everyone plays this game even one time in life.
 
 Rock smashes scissors.
 Paper covers rock.
 Scissors cut paper.
 
 You play this game aganist computer and who will the 3 as score will be winner! 
-
-Easy, dah? :)
 """
 
 import random
