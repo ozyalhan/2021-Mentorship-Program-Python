@@ -14,9 +14,11 @@ import random
 
 
 def main():
-    user_score = 0  # global değişken
+    """Runs Main Function"""  # docstring
+    user_score = 0
     computer_score = 0
 
+    # Game Mechanism on Terminal
     while True:
         user = get_user_choice()
 
