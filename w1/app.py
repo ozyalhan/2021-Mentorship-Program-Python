@@ -7,7 +7,7 @@ Rock smashes scissors.
 Paper covers rock.
 Scissors cut paper.
 
-You play this game aganist computer and who will the 3 as score will be winner! 
+You play this game aganist computer and who will the 3 as score will be winner!
 """
 
 import random
@@ -42,54 +42,30 @@ def score_control(user_s, computer_s):
 
 
 def compare(user_val, computer_val, user_score, computer_score):
+    """Get user_val and computer_val, and evalutes game rule. Gets user_score and computer score and return both in every case.
+        - Rock smashes scissors.
+        - Paper covers rock.
+        - Scissors cut paper.
+    """
+
+    game_choice_dict = {0: "Rock", 1: "Paper", 2: "Scissors"}
+
     if user_val != computer_val:
-        if user_val == 1 and computer_val == 0:
-            print("User Win")
+
+        if (user_val == 1 and computer_val == 0) or (user_val == 2 and computer_val == 1) or (user_val == 0 and computer_val == 2):
+            print("User Wins")
             user_score += 1
-            print("User Score:{} | Computer Score:{}".format(
-                user_score, computer_score))
-            return user_score, computer_score
 
-        elif user_val == 0 and computer_val == 1:
-            print("Computer Win")
+        elif (user_val == 0 and computer_val == 1) or (user_val == 1 and computer_val == 2) or (user_val == 2 and computer_val == 0):
+            print("Computer Wins")
             computer_score += 1
-            print("User Score:{} | Computer Score:{}".format(
-                user_score, computer_score))
-            return user_score, computer_score
-
-        elif user_val == 2 and computer_val == 1:
-            print("User Win")
-            user_score += 1
-            print("User Score:{} | Computer Score:{}".format(
-                user_score, computer_score))
-            return user_score, computer_score
-
-        elif user_val == 1 and computer_val == 2:
-            print("Computer Win")
-            computer_score += 1
-            print("User Score:{} | Computer Score:{}".format(
-                user_score, computer_score))
-            return user_score, computer_score
-
-        elif user_val == 0 and computer_val == 2:
-            print("User Win")
-            user_score += 1
-            print("User Score:{} | Computer Score:{}".format(
-                user_score, computer_score))
-            return user_score, computer_score
-
-        elif user_val == 2 and computer_val == 0:
-            print("Computer Win")
-            computer_score += 1
-            print("User Score:{} | Computer Score:{}".format(
-                user_score, computer_score))
-            return user_score, computer_score
-
     else:
-        print("You choose the same!")
-        print("User Score:{} | Computer Score:{}".format(
-            user_score, computer_score))
-        return user_score, computer_score
+        print("Draw! You choose the same!")
+
+    print("User showed:{} | Computer shoved:{}".format(
+        game_choice_dict.get(user_val), game_choice_dict.get(computer_val)))
+    print("User Score:{} | Computer Score:{}\n-----".format(user_score, computer_score))
+    return user_score, computer_score
 
 
 def get_computer_choice():
