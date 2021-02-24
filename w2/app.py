@@ -76,11 +76,19 @@ def get_computer_choice():
 
 def get_user_choice():
     """Get user input and return it as integer value"""
+
+    # TODO In try-except block recursive structure should be control with local variable. It will be handle in recursive functions subject.
     try:
-        user_choice = int(input("Rock[0], Paper[1], Scisscors[2]: "))
+        user_choice = int(input("Rock[0], Paper[1], Scisscors[2]: ").strip())
         if user_choice not in [0, 1, 2]:
-            get_computer_choice()
+            print("Please write input only 0, 1, 2.")
+            return get_user_choice()
+
         return user_choice
+
+    except ValueError:
+        print("Error: You wrote wrong input, Please write input only 0, 1, 2.")
+        return get_user_choice()
 
 
 if __name__ == "__main__":
