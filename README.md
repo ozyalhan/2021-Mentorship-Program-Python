@@ -22,11 +22,14 @@ Benefits: Try-Except, Error Handling, Fundamentals of Recursive Structures
 ## Week 3 Assignment
 Testing the Rock Paper Scissors game code with unittest.
 - Understanding the fundamentals of software testing.
-- Defining test cases and corner cases.
+- Defining test cases and corner/edge cases.
 - Get experience with unittest.
+- Explain the file tree/structure and import local modules
+- Discuss about __init__.py
 - Explain the TDD with open source project examples. 
 
-Benefits: Testing, unittest, class structures, test-cases
+
+Benefits: Testing, unittest, class structures, test-cases, edge or corner cases , import local modules 
 
 
 
