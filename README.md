@@ -19,5 +19,14 @@ Refactor the Rock Paper Scissors game with try-except block.
 
 Benefits: Try-Except, Error Handling, Fundamentals of Recursive Structures 
 
+## Week 3 Assignment
+Testing the Rock Paper Scissors game code with unittest.
+- Understanding the fundamentals of software testing.
+- Defining test cases and corner cases.
+- Get experience with unittest.
+- Explain the TDD with open source project examples. 
+
+Benefits: Testing, unittest, class structures, test-cases
+
 
 
